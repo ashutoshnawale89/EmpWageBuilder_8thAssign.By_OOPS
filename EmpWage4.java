@@ -1,29 +1,33 @@
 package com.empwage.program;
 
-class EmpWageUC5 extends EmpWageUC4  {
 
-	public final int workingdays=20;
-	int n=1;
+class EmpWageUC4 extends EmpWageUC3  {
+	public int totalempwage=0;
+	public void EmpWageUC4 () {
+		int attendemployee=(int) (Math.floor(Math.random()*10)%3);
 
-
-	public void EmpWageUC5 () {
-		EmpWageUC4 newcase=new EmpWageUC4();
-		while (n < workingdays)
-		{ n++;
-
-		newcase.EmpWageUC4();
-
+		switch ((int) attendemployee) {
+		case  is_presentemployee :
+			emphrs = 8;
+			break;
+		case parttime :
+			emphrs = 4;
+			break;
+		default:
+			emphrs = 0;
+		}	
+		employeewage=emphrs*wage_per_hr;
+		System.out.println("The Salary of Employee is "+employeewage+" ");}{
+			System.out.println("The Total Salary of Month is "+totalempwage+" ");
 		}
-		System.out.println("The Total Salary of Month is "+totalempwage+" ");
-	}
-	public static void main(String[] args) {
-		EmpWageUC5 days=new EmpWageUC5();
-		days.EmpWageUC5();
-
-	}
 
 
+		public static void main(String[] args) {
+			EmpWageUC4 newcase=new EmpWageUC4();
+			newcase.EmpWageUC4();
+		}
 }
+
 
 
 
